@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Restaurant Scolaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant Scolaire</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="commandes.html">Suivi des commandes</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Réserver un repas</h2>
+            <form action="/submit_reservation" method="POST">
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="menu">Choix du menu :</label>
+                <select id="menu" name="menu" required>
+                    <option value="poulet">Poulet rôti</option>
+                    <option value="spaghetti">Spaghetti bolognaise</option>
+                    <option value="poisson">Poisson grillé</option>
+                    <option value="pizza">Pizza végétarienne</option>
+                    <option value="couscous">Couscous</option>
+                </select>
+
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact : <a href="mailto:yassine2005w@gmail.com">yassine2005w@gmail.com</a></p>
+        <p>&copy; 2024 Restaurant Scolaire</p>
+    </footer>
+</body>
+</html>

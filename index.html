@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Restaurant Scolaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1>Bienvenue sur <span>Restaurant Scolaire</span></h1>
+            <img src="images/DALL·E 2024-12-25 00.46.08 - A high-quality image of a delicious plated meal, including a variety of colorful dishes such as pasta, vegetables, and grilled chicken, presented beau.webp" alt="Restaurant Image" class="restaurant-image">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                </div>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            // Ici, vous pouvez ajouter une vérification des identifiants
+            // Pour cet exemple, nous allons simplement rediriger vers la page d'accueil
+
+            // Redirection vers la page d'accueil
+            window.location.href = 'index2.html'; // Remplacez par le nom de votre page d'accueil
+        });
+    </script>
+</body>
+</html>
